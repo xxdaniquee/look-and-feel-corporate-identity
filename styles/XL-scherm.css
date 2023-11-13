@@ -1,0 +1,5 @@
+@media (min-width: 1100px) {
+    .initiatief {
+      flex-basis: calc(25% - 18px);
+    }
+  }

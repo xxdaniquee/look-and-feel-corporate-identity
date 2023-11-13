@@ -1,0 +1,8 @@
+@media (min-width: 840px) {
+    .initiatief-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+  }

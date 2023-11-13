@@ -1,0 +1,12 @@
+@media (min-width: 640px) {
+    .initiatief {
+      flex-basis: calc(50% - 12px);
+    }
+    .initiatief-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+
+}
