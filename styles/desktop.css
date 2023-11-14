@@ -1,0 +1,107 @@
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .initiatief {
+      flex-basis: calc(33.3% - 16px);
+    }
+
+    /*  */
+/*  */
+/*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
+/*  */
+/*  */
+
+
+.abc-top img{
+  height: 20em;
+}
+
+.abc-top h1{
+  font-size: 3em;
+  top: 70%;
+}
+
+.abc-info {
+  font-size: 1.2em;
+  margin: 2em 14em;
+  font-weight: 300;
+}
+
+.abc-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abc-card-left, .abc-card-right {
+ display: flex;
+  width: 60em;
+  margin: 10px;
+  padding: 20px;
+  
+}
+
+.abc-card-left img, .abc-card-right img{
+  width: 27em;
+  height: 23em;
+  border-radius: 8px;
+}
+
+.abc-card-right{
+  padding-right: 20px;
+  text-align: left;
+}
+
+.abc-card-right h3 {
+  font-size: 2em;
+  margin-left: 1.2em;
+  padding-top: 1.5em;
+}
+
+.abc-card-right p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  white-space: wrap;
+  margin-right: 4em;
+  margin-top: 2em;
+}
+
+
+.abc-card-right a {
+  display: block;
+  margin-top: 3em;
+  padding: 0.7em;
+  text-align: center;
+}
+
+.abc-card-left{
+  margin-bottom: 5em;
+  text-align: right;
+}
+
+.abc-card-left h3 {
+  font-size: 2em;
+  margin-right: 1.2em;
+  padding-top: 1.5em;
+}
+
+.abc-card-left p  {
+  font-size: 1.1em;
+  line-height: 1.7;
+  white-space: wrap;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.abc-card-left a {
+  display: block;
+  margin-top: 3em;
+  padding: 0.7em;
+  text-align: center;
+}
+
+.abc-card-left a:hover, .abc-card-right a:hover {
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+    
+  }

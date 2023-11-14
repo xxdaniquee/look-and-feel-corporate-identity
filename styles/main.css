@@ -186,16 +186,7 @@ Header{
     flex-wrap: wrap;
 }
   
-.initiatief {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    position: relative;
-    padding: 24px;
-    background: var(--white);
-}
-  
-.initiatief-card {
+.initiatief-card, .buur-card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -203,20 +194,20 @@ Header{
     margin-bottom: 36px;
 }
   
-  .initiatief-card img {
+.initiatief-card img, .buur-card img {
     width: 100%;
     height: 360px;
     object-fit: cover;
     object-position: 50% 20%;
 }
   
-.initiatief-text {
+.initiatief-text, .buur-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
   
-.initiatief-text h3 {
+.initiatief-text h3, .buur-text h3 {
     font-size: 1.5em;
     font-weight: 700;
     color: var(--blue);
@@ -224,22 +215,22 @@ Header{
     padding-left: 12px;
 }
 
-.initiatief-text p, .initiatief-card p {
+.initiatief-text p, .initiatief-card p, .buur-text p, .buur-card p {
     font-size: 1em;
     line-height: 1.7;
     font-weight: 300;
     color: var(--blue);
 }
 
-.initiatief-text p {
+.initiatief-text p, .buur-text p{
     color: var(--light-green);
 }
 
-.initiatief-card p {
+.initiatief-card p, .buur-card p{
     white-space: wrap;
 }
   
-  .initiatief a {
+.initiatief a {
     display: block;
     justify-content: center;
     align-items: center;
@@ -251,6 +242,7 @@ Header{
     transition: background 0.4s ease;
     text-decoration: none;
     color: var(--dark-green);
+    border-radius: 0.5em;
 }
   
 .initiatief a:hover {
@@ -298,6 +290,7 @@ Header{
     transition: background 0.4s ease;
     text-decoration: none;
     color: var(--dark-green);
+    border-radius: 0.5em;
 }
      
 
@@ -346,6 +339,92 @@ Header{
     font-size: 1.1em;
 }
 
+.buur-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 24px;
+    padding: 24px;
+    flex-wrap: wrap;
+}
+  
+.buur-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    padding: 24px;
+    background: var(--white);
+    margin-bottom: 36px;
+}  
+
+.buur-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+   
+.buur-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.buur-text h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--blue);
+    border-left: 3px solid var(--dark-green);
+    padding-left: 0.5em; 
+    margin-left: 1em;
+}
+
+.buur-text p, .buur-card p {
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 300;
+    color: var(--blue);
+}
+
+.buur-text p {
+    color: var(--light-green);
+}
+
+.buur-card p {
+    text-align: left;
+    margin-left: 1em;
+    white-space: wrap;
+}
+.button-container{
+    display: flex;
+}
+.buur-card button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    padding: 1em;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px var(--dark-green) inset;
+    transition: background 0.4s ease;
+    text-decoration: none;
+    color: var(--dark-green);
+    width: 15em;
+    border-radius: 0.5em;
+}
+  
+.buur-card button:hover {
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+
+    
+
+
 
 /*  */
 /*  */
@@ -390,18 +469,261 @@ footer{
     width: 20%;
 }
 
+hr{
+    color: var(--light-green);
+    border-width: 0.1;
+    width: 50%;
+    opacity: 0.3;
+}
+
+
+
+/*  */
+/*  */
+/*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
+/*  */
+/*  */
+
+
+.abc-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.abc-top img{
+    width: 100%; 
+    height: 10em;
+    align-items: center;
+}
+
+.abc-top h1{
+    font-size: 1.5em;
+    color: var(--white);
+    margin-top: 10px;
+    position: absolute;
+    top: 65%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px var(--black);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+.abc-info {
+    text-align: center;
+    color: var(--blue);
+    font-size: 1.1em;
+    margin: 2em 2em;
+}
+
+
+.abc-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.abc-card-left, .abc-card-right {
+    width: 30em;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--grey);
+}
+  
+.abc-card-left img, .abc-card-right img{
+    width: 26em;
+    height: 20em;
+    border-radius: 8px;
+    margin: 1em 0.5em;
+}
+
+.abc-card-left, .abc-card-right, .abc-text {
+    flex: 1;
+    padding-left: 20px; 
+}
+  
+.abc-card-left h3, .abc-card-right h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.abc-card-left p, .abc-card-right p {
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: 300;
+    color: var(--blue);
+    white-space: wrap;
+    margin: 1em 2em;
+}
+  
+.abc-card-left a, .abc-card-right a {
+    display: block;
+    margin: 1em 5em;
+    padding: 0.5em;
+    width: 20em;
+    background-color: var(--white);
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    text-decoration: none;
+    border-radius: 0.5em;
+    
+}
+  
+.abc-card-left a:hover, .abc-card-right a:hover {
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+.abc-card-left{
+    flex-direction: row-reverse;
+    margin-bottom: 5em;
+}
+
+.abc-card-right, .abc-text{
+    padding-left: 0;
+    padding-right: 20px;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+/*  */
+/* MEDIA */
+/*  */
+
+
+@media (min-width:42rem ) { 
+    .top h1{
+        font-size: 2.5em;
+    }
+    
+   footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+   }
+
+   .foot-contact{
+        text-align: right;
+        margin-right: 1.5em;
+        line-height: 0.5em;
+        margin-top: 5em;
+   }
+
+   .foot-contact img{
+        width: 8em;
+   }
+
+   .nav-foot{
+        text-align: left;
+        margin-left: 1.5em;
+   }
+
+}
+
+
+@media (min-width:63rem ) { 
+    .top img{
+        height: 40em;
+    }
+    
+    .top h1{
+        font-size: 3em;
+    }
+
+}
+
+@media (min-width: 320px) {
+    .initiatief-text, .buur-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
   
+  @media (min-width: 460px) {
+    .initiatief-text, .buur-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
   
+  @media (min-width: 640px) {
+    .initiatief, .buur-card{
+      flex-basis: calc(50% - 12px);
+    }
+    .initiatief-text, .buur-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
   
+  @media (min-width: 840px) {
+    .initiatief-text, .buur-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
   
- 
+  @media (min-width: 1024px) {
+    .initiatief, .buur-card {
+      flex-basis: calc(33.3% - 16px);
+    }
+    .initiatief-text, .buur-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
   
-  
-  
-  
+  @media (min-width: 1100px) {
+    .initiatief, .buur-card{
+      flex-basis: calc(25% - 20px);
+    } 
+    .buur-wrap{
+        display: grid;
+        grid-template-columns: 4, 1fr;
+        grid-template-rows: 1fr;
+    }
+
+  }
