@@ -186,7 +186,7 @@ Header{
     flex-wrap: wrap;
 }
   
-.initiatief-card, .buur-card {
+.initiatief-card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -194,20 +194,20 @@ Header{
     margin-bottom: 36px;
 }
   
-.initiatief-card img, .buur-card img {
+.initiatief-card img {
     width: 100%;
-    height: 360px;
+    height: 250px;
     object-fit: cover;
     object-position: 50% 20%;
 }
   
-.initiatief-text, .buur-text {
+.initiatief-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
   
-.initiatief-text h3, .buur-text h3 {
+.initiatief-text h3{
     font-size: 1.5em;
     font-weight: 700;
     color: var(--blue);
@@ -215,19 +215,20 @@ Header{
     padding-left: 12px;
 }
 
-.initiatief-text p, .initiatief-card p, .buur-text p, .buur-card p {
+.initiatief-text p, .initiatief-card p {
     font-size: 1em;
-    line-height: 1.7;
+    line-height: 1.4;
     font-weight: 300;
     color: var(--blue);
 }
 
-.initiatief-text p, .buur-text p{
+.initiatief-text p{
     color: var(--light-green);
 }
 
-.initiatief-card p, .buur-card p{
+.initiatief-card p{
     white-space: wrap;
+    text-align: left;
 }
   
 .initiatief a {
@@ -253,7 +254,7 @@ Header{
 
 /*  */
 /*  */
-/* APPLY INFO */
+/* BUURTINITIATIEF AANMELDEN */
 /*  */
 /*  */
 
@@ -302,7 +303,7 @@ Header{
 
 /*  */
 /*  */
-/* BUUR */
+/* HELP EEN BUUR */
 /*  */
 /*  */
 
@@ -352,18 +353,17 @@ Header{
 .buur-card {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     position: relative;
-    padding: 24px;
-    background: var(--white);
-    margin-bottom: 36px;
+    gap: 12px;
+    padding: 1em;
 }  
 
 .buur-card img {
     width: 100%;
-    height: 360px;
+    height: 250px;
     object-fit: cover;
     object-position: 50% 20%;
+    margin-bottom: 0.5em;
 }
    
 .buur-text {
@@ -378,7 +378,6 @@ Header{
     color: var(--blue);
     border-left: 3px solid var(--dark-green);
     padding-left: 0.5em; 
-    margin-left: 1em;
 }
 
 .buur-text p, .buur-card p {
@@ -394,7 +393,6 @@ Header{
 
 .buur-card p {
     text-align: left;
-    margin-left: 1em;
     white-space: wrap;
 }
 .button-container{
@@ -405,7 +403,7 @@ Header{
     flex-direction: row;
     justify-content: center;
     margin-top: 1.5em;
-    margin-left: 2em;
+    margin-left: 1em;
     padding: 1em;
     background: transparent;
     box-shadow: 0px 0px 0px 1px var(--dark-green) inset;
@@ -434,7 +432,7 @@ Header{
 
 
 footer{
-    background-color: var(--dark-green);
+    background-color: var(--blue);
     color: var(--white);
     text-align: center;
     padding: 30px 0;
@@ -442,7 +440,8 @@ footer{
 
 .nav-foot ul{
     list-style-type: none;
-    padding: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--white);
 }
 
 .nav-foot li{
@@ -467,13 +466,6 @@ footer{
 
 .foot-contact img{
     width: 20%;
-}
-
-hr{
-    color: var(--light-green);
-    border-width: 0.1;
-    width: 50%;
-    opacity: 0.3;
 }
 
 
@@ -604,39 +596,9 @@ hr{
 
 
 
-/*  */
-/* MEDIA */
-/*  */
 
 
-@media (min-width:42rem ) { 
-    .top h1{
-        font-size: 2.5em;
-    }
-    
-   footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-   }
 
-   .foot-contact{
-        text-align: right;
-        margin-right: 1.5em;
-        line-height: 0.5em;
-        margin-top: 5em;
-   }
-
-   .foot-contact img{
-        width: 8em;
-   }
-
-   .nav-foot{
-        text-align: left;
-        margin-left: 1.5em;
-   }
-
-}
 
 
 @media (min-width:63rem ) { 
@@ -650,80 +612,6 @@ hr{
 
 }
 
-@media (min-width: 320px) {
-    .initiatief-text, .buur-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 460px) {
-    .initiatief-text, .buur-text {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 640px) {
-    .initiatief, .buur-card{
-      flex-basis: calc(50% - 12px);
-    }
-    .initiatief-text, .buur-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 840px) {
-    .initiatief-text, .buur-text {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .initiatief, .buur-card {
-      flex-basis: calc(33.3% - 16px);
-    }
-    .initiatief-text, .buur-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
-    }
-    .user-follow-info {
-      margin-top: 6px;
-    }
-  }
-  
-  @media (min-width: 1100px) {
-    .initiatief, .buur-card{
-      flex-basis: calc(25% - 20px);
-    } 
-    .buur-wrap{
-        display: grid;
-        grid-template-columns: 4, 1fr;
-        grid-template-rows: 1fr;
-    }
 
-  }
+  
+  

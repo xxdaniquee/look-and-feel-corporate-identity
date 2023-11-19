@@ -1,9 +1,48 @@
 @media (min-width: 1024px) and (max-width: 1919px) {
-    .initiatief {
-      flex-basis: calc(33.3% - 16px);
-    }
+    
+  .top h1{
+    font-size: 2.5em;
+  } 
+  
+  
+  .initiatief {
+      flex-basis: calc(25% - 18px);
+  }
 
-    /*  */
+  .buur-card {
+    flex-basis: calc(25% - 18px);
+}
+
+  
+
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.foot-contact{
+     text-align: right;
+     margin-right: 1.5em;
+     line-height: 0.5em;
+     margin-top: 5em;
+}
+
+.foot-contact img{
+     width: 8em;
+}
+
+.nav-foot{
+     text-align: left;
+     margin-left: 1.5em;
+}
+
+.nav-foot ul{
+  border: none;
+}
+
+/*  */
 /*  */
 /*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
 /*  */
