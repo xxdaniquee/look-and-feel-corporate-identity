@@ -1,12 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 :root{
-    --white: #ffffff;
-    --grey: #dfe4e5;
-    --light-green: #d4e9db;
-    --dark-green: #46aa64;
-    --blue: #0a3250;
-    --black: #111111;
+    /* COLORS */
+  --white: #ffffff;
+  --grey: #dfe4e5;
+  --light-green: #d4e9db;
+  --green: #46aa64;
+  --dark-green: #2A633B;
+  --button-green: #8AC59F;
+  --blue: #0a3250;
+  --dark-blue: #062026;
+  --black: #111111;
+
+  /* TRANSITION */
+  --transition: 0.4s ease;
 }
+
+@font-face {
+    font-family: "AvantGarde-Bold";
+    src: local("Avant Garde Bold"), local("AvantGarde-Bold"),
+      url("./font/AvantGarde-Bold.ttf");
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: "AvantGarde-Med";
+    src: local("Avant Garde Medium"), local("AvantGarde-Med"),
+      url("./font/AvantGarde-Med.ttf");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "AvantGarde-light";
+    src: local("Avant Garde Light"), local("AvantGarde-Light"),
+      url("./font/AvantGarde-Light.ttf");
+    font-weight: 300;
+  }
 
 *{
     border: 0;
@@ -18,6 +46,7 @@
 html body{
     width: 100%;
     height: 100vh;
+    font-size: 16px;
 }
 
 body{
@@ -26,8 +55,25 @@ body{
     justify-content: baseline;
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
-    transition: all 0.5s ease;
+    transition: var(--transition);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'AvantGarde-Bold', arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p, a {
+    font-family: 'AvantGarde-Med', arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 
@@ -41,7 +87,7 @@ Header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.8rem 1.4rem;
     background-color: var(--white);
 }
 
@@ -64,10 +110,10 @@ Header{
 }
 
 .dropbtn{
-    background-color: var(--dark-green);
-    color: var(--light-green);
-    font-size: 1.5em;
-    padding: 0.5em;
+    background-color: var(--white);
+    color: var(--green);
+    font-size: 2.5rem;
+    padding: 0.5rem;
     border: none;
     cursor: pointer;
 }
@@ -77,21 +123,21 @@ Header{
     position: absolute;
     background-color: var(--white);
     z-index: 1;
-    box-shadow: 0px 8px 16px 0px var(--grey);
+    box-shadow: 0 0.5rem 1rem 0 var(--grey);
     text-align: left;
-    min-width: 160px;
+    min-width: 10rem;
 }
 
 .dropdown-content a{
-    color: var(--dark-green);
+    color: var(--green);
     background-color: var(--light-green);
-    padding: 16px 16px;
+    padding: 1rem;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content:hover{
-    background-color: var(--dark-green);
+    background-color: var(--green);
     color: var(--light-green);
 }
 
@@ -118,22 +164,20 @@ Header{
 
 .top img{
     width: 100%; 
-    height: 30em;
+    height: 30rem;
     align-items: center;
 }
 
 .top h1{
-    font-size: 2em;
     color: var(--white);
-    margin-top: 10px;
+    margin-top: 0.8rem;
     position: absolute;
     top: 40%;
     transform: translate(-50% -50%);
     text-align: center;
-    font-weight: 700;
-    text-shadow: 4px 4px 4px var(--black);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    text-shadow: 0.4rem 0.4rem 0.4rem var(--black);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 
@@ -146,17 +190,15 @@ Header{
 
 .buurtinitiatieven h2{
     text-align: center;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 2rem;
     color: var(--blue);
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 
 .buurtinitiatieven p {
     text-align: center;
     color: var(--blue);
-    font-size: 1.1em;
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
 }
   
 .buurtinitiatieven a {
@@ -173,7 +215,7 @@ Header{
 
 .buurtinitiatieven a:hover{
     text-decoration: underline;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .initiatief-wrap {
@@ -181,8 +223,8 @@ Header{
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
-    gap: 24px;
-    padding: 24px;
+    gap: 1.5rem;
+    padding: 1.5rem;
     flex-wrap: wrap;
 }
   
@@ -190,13 +232,13 @@ Header{
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 12px;
-    margin-bottom: 36px;
+    gap: 1.4rem;
+    margin-bottom: 2.3rem;
 }
   
 .initiatief-card img {
     width: 100%;
-    height: 250px;
+    height: 15rem;
     object-fit: cover;
     object-position: 50% 20%;
 }
@@ -208,17 +250,14 @@ Header{
 }
   
 .initiatief-text h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--blue);
-    border-left: 3px solid var(--dark-green);
+    border-left: 3px solid var(--green);
     padding-left: 12px;
 }
 
 .initiatief-text p, .initiatief-card p {
-    font-size: 1em;
-    line-height: 1.4;
-    font-weight: 300;
     color: var(--blue);
 }
 
@@ -237,17 +276,17 @@ Header{
     align-items: center;
     text-align: center;
     margin-top: auto;
-    padding: 1em;
+    padding: 1rem;
     background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--dark-green) inset;
+    box-shadow: 0px 0px 0px 1px var(--green) inset;
     transition: background 0.4s ease;
     text-decoration: none;
-    color: var(--dark-green);
-    border-radius: 0.5em;
+    color: var(--green);
+    border-radius: 0.5rem;
 }
   
 .initiatief a:hover {
-    background: var(--dark-green);
+    background: var(--green);
     color: var(--white);
 }
   
@@ -261,14 +300,14 @@ Header{
 
 .apply-info{
     background-color: var(--grey);
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 .apply-info h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--blue);
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 .apply-info p{
@@ -287,16 +326,16 @@ Header{
     margin-top: auto;
     padding: 1em;
     background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--dark-green) inset;
+    box-shadow: 0px 0px 0px 1px var(--green) inset;
     transition: background 0.4s ease;
     text-decoration: none;
-    color: var(--dark-green);
+    color: var(--green);
     border-radius: 0.5em;
 }
      
 
 .apply-info a:hover{
-    background: var(--dark-green);
+    background: var(--green);
     color: var(--white);
 }
 
@@ -332,7 +371,7 @@ Header{
     padding-top: 1rem;
     text-decoration: none;
     transition: font-size 0.3s ease-in-out;
-    color: var(--dark-green);
+    color: var(--green);
 }
 
 .buur a:hover{
@@ -376,7 +415,7 @@ Header{
     font-size: 1.5em;
     font-weight: 700;
     color: var(--blue);
-    border-left: 3px solid var(--dark-green);
+    border-left: 3px solid var(--green);
     padding-left: 0.5em; 
 }
 
@@ -406,16 +445,16 @@ Header{
     margin-left: 1em;
     padding: 1em;
     background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--dark-green) inset;
+    box-shadow: 0px 0px 0px 1px var(--green) inset;
     transition: background 0.4s ease;
     text-decoration: none;
-    color: var(--dark-green);
+    color: var(--green);
     width: 15em;
     border-radius: 0.5em;
 }
   
 .buur-card button:hover {
-    background: var(--dark-green);
+    background: var(--green);
     color: var(--white);
 }
 
@@ -563,15 +602,15 @@ footer{
     padding: 0.5em;
     width: 20em;
     background-color: var(--white);
-    color: var(--dark-green);
-    border: 2px solid var(--dark-green);
+    color: var(--green);
+    border: 2px solid var(--green);
     text-decoration: none;
     border-radius: 0.5em;
     
 }
   
 .abc-card-left a:hover, .abc-card-right a:hover {
-    background: var(--dark-green);
+    background: var(--green);
     color: var(--white);
 }
 
