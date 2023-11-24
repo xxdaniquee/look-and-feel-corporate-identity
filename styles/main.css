@@ -16,25 +16,40 @@
 }
 
 @font-face {
-    font-family: "AvantGarde-Bold";
-    src: local("Avant Garde Bold"), local("AvantGarde-Bold"),
-      url("./font/AvantGarde-Bold.ttf");
-    font-weight: 900;
-  }
+    font-family: 'ITC Avant Garde Std Bold';
+    src: url('ITCAvantGardeStd-Bold.eot');
+    src: local('ITC Avant Garde Gothic Std Bold'), local('ITCAvantGardeStd-Bold'),
+        url('ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Bold.woff') format('woff'),
+        url('ITCAvantGardeStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
   
   @font-face {
-    font-family: "AvantGarde-Med";
-    src: local("Avant Garde Medium"), local("AvantGarde-Med"),
-      url("./font/AvantGarde-Med.ttf");
+    font-family: 'ITC Avant Garde Std Md';
+    src: url('ITCAvantGardeStd-Md.eot');
+    src: local('ITC Avant Garde Gothic Std Medium'), local('ITCAvantGardeStd-Md'),
+        url('ITCAvantGardeStd-Md.eot?#iefix') format('embedded-opentype'),
+        url('ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Md.woff') format('woff'),
+        url('ITCAvantGardeStd-Md.ttf') format('truetype');
     font-weight: 500;
-  }
+    font-style: normal;
+}
   
-  @font-face {
-    font-family: "AvantGarde-light";
-    src: local("Avant Garde Light"), local("AvantGarde-Light"),
-      url("./font/AvantGarde-Light.ttf");
-    font-weight: 300;
-  }
+@font-face {
+    font-family: 'ITC Avant Garde Std XLt';
+    src: url('ITCAvantGardeStd-XLt.eot');
+    src: local('ITC Avant Garde Gothic Std Extra Light'), local('ITCAvantGardeStd-XLt'),
+        url('ITCAvantGardeStd-XLt.eot?#iefix') format('embedded-opentype'),
+        url('ITCAvantGardeStd-XLt.woff2') format('woff2'),
+        url('ITCAvantGardeStd-XLt.woff') format('woff'),
+        url('ITCAvantGardeStd-XLt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
 
 *{
     border: 0;
@@ -59,18 +74,18 @@ body{
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'AvantGarde-Bold', arial, sans-serif;
+h1, h2, h3, h4, h5, h6, th{
+    font-family: 'ITC Avant Garde Std Bold', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-}
+  }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 p, a {
-    font-family: 'AvantGarde-Med', arial, sans-serif;
+    font-family: 'ITC Avant Garde Gothic Std Medium', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1rem;
@@ -166,6 +181,7 @@ Header{
     width: 100%; 
     height: 30rem;
     align-items: center;
+    opacity: 0.5;
 }
 
 .top h1{
@@ -313,24 +329,24 @@ Header{
 .apply-info p{
     text-align: center;
     color: var(--blue);
-    font-size: 1.1em;
-    padding: 0.7em;
+    font-size: 1rem;
+    padding: 0.7rem;
 }
 
 .apply-info a{
-    margin: 2em 5em;
+    margin: 2rem 5rem;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: auto;
-    padding: 1em;
+    padding: 1rem;
     background: transparent;
     box-shadow: 0px 0px 0px 1px var(--green) inset;
     transition: background 0.4s ease;
     text-decoration: none;
     color: var(--green);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
      
 
@@ -624,12 +640,16 @@ footer{
     padding-right: 20px;
 }
 
+/*  */
+/*  */
+/*  POP UP */
+/*  */
+/*  */
 
 
-
-
-
-
+.popup-wrap input, textarea{
+    border: 2px solid black;
+}
 
 
 
