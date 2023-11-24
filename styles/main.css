@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-:root{
+:root {
     /* COLORS */
-  --white: #ffffff;
-  --grey: #dfe4e5;
-  --light-green: #d4e9db;
-  --green: #46aa64;
-  --dark-green: #2A633B;
-  --button-green: #8AC59F;
-  --blue: #0a3250;
-  --dark-blue: #062026;
-  --black: #111111;
-
-  /* TRANSITION */
-  --transition: 0.4s ease;
-}
+    --c-background: #ffffff;
+    --c-textblock: #dfe4e5;
+    --c-accent-green: #d4e9db;
+    --c-main-green: #46aa64;
+    --c-hover-green: #2A633B;
+    --c-main-blue: #0a3250;
+    --c-hover-blue: #062026;
+    --c-ex-dark: #111111;
+  
+    /* BORDER */
+    --border: 3px solid var(--c-accent-green);
+  
+    /* TRANSITION */
+    --transition: 0.4s ease;
+  }
 
 @font-face {
     font-family: 'ITC Avant Garde Std Bold';
@@ -24,7 +25,6 @@
         url('ITCAvantGardeStd-Bold.woff') format('woff'),
         url('ITCAvantGardeStd-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
 }
   
   @font-face {
@@ -36,7 +36,6 @@
         url('ITCAvantGardeStd-Md.woff') format('woff'),
         url('ITCAvantGardeStd-Md.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
 }
   
 @font-face {
@@ -47,8 +46,7 @@
         url('ITCAvantGardeStd-XLt.woff2') format('woff2'),
         url('ITCAvantGardeStd-XLt.woff') format('woff'),
         url('ITCAvantGardeStd-XLt.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+    font-weight: 300;
 }
 
 *{
@@ -78,16 +76,38 @@ h1, h2, h3, h4, h5, h6, th{
     font-family: 'ITC Avant Garde Std Bold', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+    color: var(--c-main-blue);
   }
 
 h1 {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
-p, a {
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+p {
     font-family: 'ITC Avant Garde Gothic Std Medium', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 1rem;
+    color: var(--c-main-blue);
+}
+
+a {
+    font-family: 'ITC Avant Garde Gothic Std Medium', arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--c-main-green);
     font-size: 1rem;
 }
 
@@ -103,7 +123,7 @@ Header{
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 1.4rem;
-    background-color: var(--white);
+    background-color: var(--c-background);
 }
 
 .logo img{  
@@ -125,8 +145,8 @@ Header{
 }
 
 .dropbtn{
-    background-color: var(--white);
-    color: var(--green);
+    background-color: var(--c-background);
+    color: var(--c-main-green);
     font-size: 2.5rem;
     padding: 0.5rem;
     border: none;
@@ -136,24 +156,24 @@ Header{
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: var(--white);
+    background-color: var(--c-background);
     z-index: 1;
-    box-shadow: 0 0.5rem 1rem 0 var(--grey);
+    box-shadow: 0 0.5rem 1rem 0 var(--c-textblock);
     text-align: left;
     min-width: 10rem;
 }
 
 .dropdown-content a{
-    color: var(--green);
-    background-color: var(--light-green);
+    color: var(--c-main-green);
+    background-color: var(--c-accent-green);
     padding: 1rem;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content:hover{
-    background-color: var(--green);
-    color: var(--light-green);
+    background-color: var(--c-main-green);
+    color: var(--c-accent-green);
 }
 
 .dropdown:hover, .dropdown-content a{ 
@@ -177,7 +197,7 @@ Header{
     position: relative;
 }
 
-.top img{
+.title-pic{
     width: 100%; 
     height: 30rem;
     align-items: center;
@@ -185,15 +205,24 @@ Header{
 }
 
 .top h1{
-    color: var(--white);
+    color: var(--c-background);
     margin-top: 0.8rem;
     position: absolute;
-    top: 40%;
+    top: 30%;
     transform: translate(-50% -50%);
     text-align: center;
-    text-shadow: 0.4rem 0.4rem 0.4rem var(--black);
+    text-shadow: 0.4rem 0.4rem 0.4rem var(--c-ex-dark);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.hallen-house {
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    vertical-align: middle;
+    top: 90%;
+
 }
 
 
@@ -206,15 +235,12 @@ Header{
 
 .buurtinitiatieven h2{
     text-align: center;
-    font-size: 2rem;
-    color: var(--blue);
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .buurtinitiatieven p {
     text-align: center;
-    color: var(--blue);
-    padding-top: 0.5rem;
+    padding: 0.5rem 1rem;
 }
   
 .buurtinitiatieven a {
@@ -223,16 +249,16 @@ Header{
     align-items: center;
     text-align: center;
     margin-top: auto;
-    padding-top: 1rem;
     text-decoration: none;
-    transition: font-size 0.3s ease-in-out;
-    color: var(--dark-green);
+    transition: var(--transition);
+    color: var(--c-main-green);
 }
 
-.buurtinitiatieven a:hover{
+ .buurtinitiatieven a:hover{
     text-decoration: underline;
     font-size: 1.1rem;
-}
+    color: var(--c-hover-green);
+} 
 
 .initiatief-wrap {
     display: flex;
@@ -249,14 +275,14 @@ Header{
     flex-direction: column;
     position: relative;
     gap: 1.4rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1rem; 
 }
   
 .initiatief-card img {
     width: 100%;
     height: 15rem;
     object-fit: cover;
-    object-position: 50% 20%;
+     object-position: 50% 20%;
 }
   
 .initiatief-text {
@@ -266,19 +292,12 @@ Header{
 }
   
 .initiatief-text h3{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--blue);
-    border-left: 3px solid var(--green);
-    padding-left: 12px;
-}
-
-.initiatief-text p, .initiatief-card p {
-    color: var(--blue);
+    border-left: var(--border);
+    padding-left: 0.8rem;
 }
 
 .initiatief-text p{
-    color: var(--light-green);
+    color: var(--c-accent-green);
 }
 
 .initiatief-card p{
@@ -294,16 +313,15 @@ Header{
     margin-top: auto;
     padding: 1rem;
     background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--green) inset;
-    transition: background 0.4s ease;
+    background-color: var(--c-main-green);
+    color: var(--c-background);
+    transition: var(--transition);
     text-decoration: none;
-    color: var(--green);
-    border-radius: 0.5rem;
 }
   
 .initiatief a:hover {
-    background: var(--green);
-    color: var(--white);
+    background: var(--c-hover-green);
+    color: var(--c-background);
 }
   
 
@@ -315,44 +333,37 @@ Header{
 
 
 .apply-info{
-    background-color: var(--grey);
+    background-color: var(--c-textblock);
     padding-bottom: 1rem;
 }
 .apply-info h2{
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--blue);
     padding-top: 1rem;
 }
 
 .apply-info p{
     text-align: center;
-    color: var(--blue);
-    font-size: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
 }
 
 .apply-info a{
-    margin: 2rem 5rem;
+    margin: 2rem 1rem;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: auto;
     padding: 1rem;
-    background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--green) inset;
-    transition: background 0.4s ease;
+    transition: var(--transition);
     text-decoration: none;
-    color: var(--green);
-    border-radius: 0.5rem;
+    color: var(--c-background);
+    background-color: var(--c-main-green)
 }
      
 
 .apply-info a:hover{
-    background: var(--green);
-    color: var(--white);
+    background: var(--c-hover-green);
+    color: var(--c-background);
 }
 
 
@@ -365,17 +376,12 @@ Header{
 
 .buur h2{
     text-align: center;
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--blue);
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 
 .buur p{
     text-align: center;
-    color: var(--blue);
-    font-size: 1.1em;
-    padding: 0.7em;
+    padding: 0.7rem;
 }
 
 .buur a {
@@ -386,13 +392,13 @@ Header{
     margin-top: auto;
     padding-top: 1rem;
     text-decoration: none;
-    transition: font-size 0.3s ease-in-out;
-    color: var(--green);
+    transition: var(--transition);
 }
 
 .buur a:hover{
     text-decoration:underline;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    color: var(--c-hover-green);
 }
 
 .buur-wrap {
@@ -400,8 +406,8 @@ Header{
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
-    gap: 24px;
-    padding: 24px;
+    gap: 1.5rem;
+    padding: 1.5rem;
     flex-wrap: wrap;
 }
   
@@ -409,16 +415,16 @@ Header{
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 12px;
-    padding: 1em;
+    gap: 0.8rem;
+    padding: 1rem;
 }  
 
 .buur-card img {
     width: 100%;
-    height: 250px;
+    height: 15rem;
     object-fit: cover;
     object-position: 50% 20%;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
    
 .buur-text {
@@ -428,22 +434,12 @@ Header{
 }
   
 .buur-text h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: var(--blue);
-    border-left: 3px solid var(--green);
-    padding-left: 0.5em; 
-}
-
-.buur-text p, .buur-card p {
-    font-size: 1em;
-    line-height: 1;
-    font-weight: 300;
-    color: var(--blue);
+    border-left: var(--border);
+    padding-left: 0.5rem; 
 }
 
 .buur-text p {
-    color: var(--light-green);
+    color: var(--c-accent-green);
 }
 
 .buur-card p {
@@ -452,26 +448,29 @@ Header{
 }
 .button-container{
     display: flex;
+
 }
 .buur-card button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1.5em;
-    margin-left: 1em;
-    padding: 1em;
-    background: transparent;
-    box-shadow: 0px 0px 0px 1px var(--green) inset;
-    transition: background 0.4s ease;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    background: transparent;transition: var(--transition);
     text-decoration: none;
-    color: var(--green);
-    width: 15em;
-    border-radius: 0.5em;
+    color: var(--c-background);
+    background-color: var(--c-main-green);
+    width: 17em;
+}
+
+.button-info{
+    background-color: var(--c-accent-green);
 }
   
 .buur-card button:hover {
-    background: var(--green);
-    color: var(--white);
+    background: var(--c-hover-green);
+    color: var(--c-background);
 }
 
 
@@ -487,25 +486,25 @@ Header{
 
 
 footer{
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--c-main-blue);
+    color: var(--c-background);
     text-align: center;
-    padding: 30px 0;
+    padding: 1.9rem 0;
 }
 
 .nav-foot ul{
     list-style-type: none;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid var(--white);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--c-background);
 }
 
 .nav-foot li{
-    margin: 5px 0;
+    margin: 0.3rem 0;
 }
 
 .nav-foot a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--c-background);
 }
 
 .nav-foot a:hover{
@@ -513,10 +512,10 @@ footer{
 }
 
 .foot-hallen{
-    margin-top: 2em;
+    margin-top: 2rem;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .foot-contact img{
@@ -542,32 +541,28 @@ footer{
 
 .abc-top img{
     width: 100%; 
-    height: 10em;
+    height: 20rem;
     align-items: center;
 }
 
 .abc-top h1{
-    font-size: 1.5em;
-    color: var(--white);
+    color: var(--c-background);
     margin-top: 10px;
     position: absolute;
-    top: 65%;
+    top: 58%;
     transform: translate(-50% -50%);
     text-align: center;
-    font-weight: 700;
-    text-shadow: 4px 4px 4px var(--black);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    text-shadow: 4px 4px 4px var(--c-ex-dark);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 
 .abc-info {
     text-align: center;
-    color: var(--blue);
-    font-size: 1.1em;
-    margin: 2em 2em;
+    margin: 2rem 2rem;
+    text-align: left;
 }
-
 
 .abc-wrap {
     display: flex;
@@ -577,57 +572,39 @@ footer{
 }
   
 .abc-card-left, .abc-card-right {
-    width: 30em;
-    margin: 2em;
-    padding: 1em;
-    border-radius: 8px;
+    width: 28rem;
+    margin: 1rem;
+    padding: 1rem;
     text-align: center;
-    background-color: var(--grey);
+    background-color: var(--c-textblock);
 }
   
 .abc-card-left img, .abc-card-right img{
-    width: 26em;
-    height: 20em;
-    border-radius: 8px;
-    margin: 1em 0.5em;
-}
-
-.abc-card-left, .abc-card-right, .abc-text {
-    flex: 1;
-    padding-left: 20px; 
+    width: 22rem;
+    height: 19rem;
+    margin: 1rem 3rem;
 }
   
-.abc-card-left h3, .abc-card-right h3 {
-    font-size: 1.7em;
-    font-weight: 700;
-    color: var(--blue);
-}
 
 .abc-card-left p, .abc-card-right p {
-    font-size: 1em;
-    line-height: 1.7;
-    font-weight: 300;
-    color: var(--blue);
-    white-space: wrap;
-    margin: 1em 2em;
+    margin: 1rem 2rem 1.5rem 3.5rem;
+    text-align: left;
 }
   
 .abc-card-left a, .abc-card-right a {
     display: block;
-    margin: 1em 5em;
-    padding: 0.5em;
-    width: 20em;
-    background-color: var(--white);
-    color: var(--green);
-    border: 2px solid var(--green);
+    margin: 1rem 3.5rem;
+    padding: 1rem;
+    width: 20rem;
+    background-color: var(--c-main-green);
+    color: var(--c-background);
     text-decoration: none;
-    border-radius: 0.5em;
     
 }
   
 .abc-card-left a:hover, .abc-card-right a:hover {
-    background: var(--green);
-    color: var(--white);
+    background: var(--c-hover-green);
+    color: var(--c-background);
 }
 
 .abc-card-left{
@@ -637,7 +614,7 @@ footer{
 
 .abc-card-right, .abc-text{
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 /*  */
@@ -646,20 +623,44 @@ footer{
 /*  */
 /*  */
 
+.popup-wrap {
+    padding: 1.3rem;
+    max-width: 25rem;
+    margin: 3rem;
+    box-shadow: 0 0 0.6rem var();
+}
 
-.popup-wrap input, textarea{
-    border: 2px solid black;
+form {
+    margin: 1.3rem;
+}
+
+label{
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 
+input [type="text"], input [type-="email"], input [type="tel"], select, textarea {
+    width: calc(100% - 1.5rem);
+    padding: 0.5rem;
+    background-color: var(--c-textblock);
+    cursor: pointer;
+}
 
+input [type="submit"] {
+    margin-top: 1.25rem;
+    padding: 0.5rem;
+    background-color: var(--c-main-blue);
+    color: var(--c-background);
+    border: none;
+    cursor: pointer;
+}
 
+input [type="submit"]:hover {
+    background-color: var(--c-hover-blue);
 
-
-
-
-
-
+}
 @media (min-width:63rem ) { 
     .top img{
         height: 40em;
