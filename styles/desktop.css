@@ -4,14 +4,9 @@
     font-size: 2.5em;
   } 
   
-  
-  .initiatief {
-      flex-basis: calc(25% - 18px);
-  }
 
-  .buur-card {
-    flex-basis: calc(25% - 18px);
-}
+  .card-wrap{
+    grid-template-columns: repeat(4, 1fr); }
 
   
 

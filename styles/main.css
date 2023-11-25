@@ -228,22 +228,23 @@ Header{
 
 /*  */
 /*  */
-/* BUURTINITIATIEVEN */
+/* BUURTINITIATIEVEN  +
+    HELP EEN BUUR */
 /*  */
 /*  */
 
 
-.buurtinitiatieven h2{
+.buurtinitiatieven h2, .buur h2{
     text-align: center;
     margin-top: 1.5rem;
 }
 
-.buurtinitiatieven p {
+.buurtinitiatieven p, .buur p {
     text-align: center;
     padding: 0.5rem 1rem;
 }
   
-.buurtinitiatieven a {
+.buurtinitiatieven a, .buur a {
     display: block;
     justify-content: center;
     align-items: center;
@@ -254,58 +255,52 @@ Header{
     color: var(--c-main-green);
 }
 
- .buurtinitiatieven a:hover{
+ .buurtinitiatieven a:hover, .buur a:hover{
     text-decoration: underline;
     font-size: 1.1rem;
     color: var(--c-hover-green);
 } 
 
-.initiatief-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
+/*  */
+/* CARDS */
+/*  */
+
+.card-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
     gap: 1.5rem;
     padding: 1.5rem;
-    flex-wrap: wrap;
 }
   
-.initiatief-card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 1.4rem;
-    margin-bottom: 1rem; 
-}
-  
-.initiatief-card img {
+.card img {
     width: 100%;
     height: 15rem;
     object-fit: cover;
      object-position: 50% 20%;
 }
   
-.initiatief-text {
+.card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
   
-.initiatief-text h3{
+.card-title h3{
     border-left: var(--border);
     padding-left: 0.8rem;
 }
 
-.initiatief-text p{
+.card-title p{
     color: var(--c-accent-green);
 }
 
-.initiatief-card p{
+.card p{
     white-space: wrap;
     text-align: left;
 }
   
-.initiatief a {
+.initiatief a, .vraag-aanbod a {
     display: block;
     justify-content: center;
     align-items: center;
@@ -319,7 +314,7 @@ Header{
     text-decoration: none;
 }
   
-.initiatief a:hover {
+.initiatief a:hover, .vraag-aanbod a:hover {
     background: var(--c-hover-green);
     color: var(--c-background);
 }
@@ -360,7 +355,6 @@ Header{
     background-color: var(--c-main-green)
 }
      
-
 .apply-info a:hover{
     background: var(--c-hover-green);
     color: var(--c-background);
@@ -369,121 +363,9 @@ Header{
 
 /*  */
 /*  */
-/* HELP EEN BUUR */
-/*  */
-/*  */
-
-
-.buur h2{
-    text-align: center;
-    padding-top: 1.5rem;
-}
-
-.buur p{
-    text-align: center;
-    padding: 0.7rem;
-}
-
-.buur a {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: auto;
-    padding-top: 1rem;
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.buur a:hover{
-    text-decoration:underline;
-    font-size: 1.1rem;
-    color: var(--c-hover-green);
-}
-
-.buur-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    flex-wrap: wrap;
-}
-  
-.buur-card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 0.8rem;
-    padding: 1rem;
-}  
-
-.buur-card img {
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-    object-position: 50% 20%;
-    margin-bottom: 0.5rem;
-}
-   
-.buur-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.buur-text h3 {
-    border-left: var(--border);
-    padding-left: 0.5rem; 
-}
-
-.buur-text p {
-    color: var(--c-accent-green);
-}
-
-.buur-card p {
-    text-align: left;
-    white-space: wrap;
-}
-.button-container{
-    display: flex;
-
-}
-.buur-card button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    background: transparent;transition: var(--transition);
-    text-decoration: none;
-    color: var(--c-background);
-    background-color: var(--c-main-green);
-    width: 17em;
-}
-
-.button-info{
-    background-color: var(--c-accent-green);
-}
-  
-.buur-card button:hover {
-    background: var(--c-hover-green);
-    color: var(--c-background);
-}
-
-
-    
-
-
-
-/*  */
-/*  */
 /*  FOOTER */
 /*  */
 /*  */
-
 
 footer{
     background-color: var(--c-main-blue);
@@ -661,17 +543,5 @@ input [type="submit"]:hover {
     background-color: var(--c-hover-blue);
 
 }
-@media (min-width:63rem ) { 
-    .top img{
-        height: 40em;
-    }
-    
-    .top h1{
-        font-size: 3em;
-    }
-
-}
 
 
-  
-  
