@@ -1,21 +1,33 @@
 @media (min-width: 1024px) and (max-width: 1919px) {
     
   .top h1{
-    font-size: 2.5em;
+    font-size: 3.5rem;
+    top: 60%;
   } 
   
 
+
+  h2 {
+    font-size: 2rem;
+  }
+
   .card-wrap{
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr); 
+    /* width: 1200px; */
+  }
 
   
 
+  .apply-info p {
+    margin: 0rem 20rem;
+  }
+  .apply-info a {
+    margin: 1rem 20rem 2rem 20rem;
+  }
+  
 
-footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
+
+
 
 .foot-contact{
      text-align: right;
@@ -45,97 +57,76 @@ footer{
 
 
 .abc-top img{
-  height: 20em;
+  height: 20rem;
 }
 
 .abc-top h1{
-  font-size: 3em;
+  font-size: 3rem;
   top: 70%;
 }
 
 .abc-info {
-  font-size: 1.2em;
-  margin: 2em 14em;
-  font-weight: 300;
-}
-
-.abc-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2rem 20rem;
 }
 
 .abc-card-left, .abc-card-right {
  display: flex;
-  width: 60em;
-  margin: 10px;
-  padding: 20px;
+  width: 60rem;
+  margin: 1rem;
+  padding: 1rem;
   
 }
 
 .abc-card-left img, .abc-card-right img{
-  width: 27em;
-  height: 23em;
-  border-radius: 8px;
-}
-
-.abc-card-right{
-  padding-right: 20px;
-  text-align: left;
+  width: 27rem;
+  height: 24rem;
 }
 
 .abc-card-right h3 {
-  font-size: 2em;
-  margin-left: 1.2em;
-  padding-top: 1.5em;
+  font-size: 2rem;
+  /* margin-left: 2rem; */
+  padding-top: 1.5rem;
 }
 
 .abc-card-right p {
-  font-size: 1.1em;
-  line-height: 1.7;
   white-space: wrap;
-  margin-right: 4em;
-  margin-top: 2em;
+  margin-right: 3rem;
+  margin-top: 2rem;
 }
 
 
 .abc-card-right a {
   display: block;
-  margin-top: 3em;
-  padding: 0.7em;
+  margin-top: 3rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .abc-card-left{
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
   text-align: right;
 }
 
 .abc-card-left h3 {
-  font-size: 2em;
-  margin-right: 1.2em;
-  padding-top: 1.5em;
+  font-size: 2rem;
+  margin-right: 1.2rem;
+  padding-top: 1.5rem;
 }
 
 .abc-card-left p  {
-  font-size: 1.1em;
-  line-height: 1.7;
+  text-align: right;
   white-space: wrap;
-  margin-left: 2em;
-  margin-top: 2em;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .abc-card-left a {
   display: block;
-  margin-top: 3em;
-  padding: 0.7em;
+  margin-top: 3rem;
+  padding: 1rem;
   text-align: center;
 }
 
-.abc-card-left a:hover, .abc-card-right a:hover {
-  background: var(--dark-green);
-  color: var(--white);
-}
 
     
   }

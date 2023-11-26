@@ -241,7 +241,7 @@ Header{
 
 .buurtinitiatieven p, .buur p {
     text-align: center;
-    margin: 0.5rem 10rem;
+    margin: 1rem;
 }
   
 .buurtinitiatieven a, .buur a {
@@ -358,6 +358,8 @@ Header{
 .apply-info a:hover{
     background: var(--c-hover-green);
     color: var(--c-background);
+    font-size: 1.1rem;
+    text-decoration: underline;
 }
 
 
@@ -481,12 +483,15 @@ footer{
     background-color: var(--c-main-green);
     color: var(--c-background);
     text-decoration: none;
+    transition: var(--transition);
     
 }
   
 .abc-card-left a:hover, .abc-card-right a:hover {
     background: var(--c-hover-green);
     color: var(--c-background);
+    font-size: 1.1rem;
+    text-decoration: underline;
 }
 
 .abc-card-left{

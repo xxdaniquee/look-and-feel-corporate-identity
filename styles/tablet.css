@@ -43,7 +43,7 @@
     footer{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: ;
     }
     
     .foot-contact{
@@ -115,9 +115,6 @@
   .abc-card-right h3 {
     padding-top: 1.5rem;
     margin-left: 3rem;
-  }
-
-  .abc-card-right p {
   }
 
   .abc-card-right a {
