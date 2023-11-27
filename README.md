@@ -24,11 +24,11 @@ User story
 <img width="851" alt="Screenshot 2023-11-26 at 22 04 03" src="https://github.com/xxdaniquee/look-and-feel-corporate-identity/assets/128936068/c59c8520-2198-4efa-94bc-9ce10a5c28b1">
 
 ## Kenmerken
-Deze website is gebouwd met [HTML]() en [CSS](). <br>
+Deze website is gebouwd met [HTML](https://github.com/xxdaniquee/look-and-feel-corporate-identity#html) en [CSS](https://github.com/xxdaniquee/look-and-feel-corporate-identity#css). <br>
 Deze website is mobile first gebouwd en responsive.
 
 ### HTML
-Er zijn 2 HTML pagina's voor deze website. Beide hebben de settings in de [HEAD]() en de content in de [BODY]().
+Er zijn 2 HTML pagina's voor deze website. Beide hebben de settings in de [HEAD](https://github.com/xxdaniquee/look-and-feel-corporate-identity#head) en de content in de [BODY](https://github.com/xxdaniquee/look-and-feel-corporate-identity#body).
 > Dit is de HTML van de homepagina: [Index.html](https://github.com/xxdaniquee/look-and-feel-corporate-identity/blob/main/index.html) <br>
 > En dit van de buurtinitiatieven pagina: [Abc.html](https://github.com/xxdaniquee/look-and-feel-corporate-identity/blob/main/abc.html)
 
@@ -48,7 +48,7 @@ Via deze link kan je iconen uitzoeken en op de website plaaatsen.
 ```
 
 ### BODY
-De structuur van de BODY is verdeeld in [HEADER](), [MAIN]() en [FOOTER]()
+De structuur van de BODY is verdeeld in [HEADER](https://github.com/xxdaniquee/look-and-feel-corporate-identity#header), [MAIN](https://github.com/xxdaniquee/look-and-feel-corporate-identity#main) en [FOOTER](https://github.com/xxdaniquee/look-and-feel-corporate-identity#footer)
 
 #### HEADER
 In de header staat het logo van De Hallen en een menu icoon om te navigeren naar andere pagina's.
@@ -116,6 +116,7 @@ Hiervoor is een media querie gebruikt:
 * Asv Bilderdijkpark https://www.bilderdijkpark.nl/wp/
 * De Hallen https://dehallen-amsterdam.nl/
 * Icons https://fontawesome.com/
+* Inspiratie https://nl.pinterest.com/
 * 
 
 ## Licentie
