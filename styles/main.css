@@ -506,94 +506,102 @@ footer{
     padding-right: 1.25rem;
 }
 
-/*  */
-/*  */
-/*  POP UP */
-/*  */
-/*  
 
-.popup-wrap {
-    margin: 2rem;
-    max-width: 35rem;
-    box-shadow: 0 0 0.6rem var();
+/*  */
+/*  */
+/*  AANMELDEN VOOR EEN BUURTINITIATIEF */
+/*  */
+/*  */
+
+.aan-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} 
+
+.aanmeld-pic{
+    width: 100%; 
+    height: 10rem;
+    align-items: center;
+   opacity: 0.7;
 }
 
-.content {
- visibility:hidden;  
-  width: 100;
-  height: auto;
-  background: #dde1e7;
-  padding: 30px 35px 40px;
-  box-sizing: border-box;
+.aan-hallen-house {
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    vertical-align: middle;
+    top: 75%;
 }
 
-.close {
-    position:absolute;
-    right:10px;
-    top:20px;
-    font-size:2rem;
-    background: var(--c-hover-blue);
-    padding: 3px;
-    padding-left: 11px;
-    padding-right: 11px;
-    cursor:pointer;
-  }
-
-
-  .aanmelden:checked~.content
-{
-  opacity:1;
-  visibility:visible;
-}  
+.aan-titel{
+    color: var(--c-background);
+    margin-top: 0.8rem;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    text-shadow: 0.4rem 0.4rem 0.4rem var(--c-ex-dark);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 2rem;
+}
 
 form {
-    margin: 1.3rem;
-}
-
-label{
-    display: block;
-    margin-top: 0.5rem;
+    max-width: 48rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  label {
     font-family: 'ITC Avant Garde Gothic Std Medium', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1rem;
     color: var(--c-main-blue);
-}
-
-input
-{
+    width: 100%;
+    margin: 2rem 0 0.5rem 2rem;
+    color: var(--c-main-blue);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea, select {
+    background-color: var(--c-textblock);
+    width: 25rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  input[type="file"]{
+    margin-bottom: 4rem;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  input[type="submit"] {
     font-family: 'ITC Avant Garde Std Bold', arial, sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
-  display: block;
-  height: 2.5rem;
-  width: 100%;
-  background-color: var(--c-background);
-  border: none;
-  margin-top: 0.5rem;
-}
-
-::placeholder
-{
-  color: var(--c-main-blue);
-  padding-left: 1rem;
-}
-
-.aanmeld-button {
-  width: 100%;
-  margin-top: 2rem;
-  padding: 1rem;
-  background: var(--c-main-blue);
-  color: var(--c-background);
-  border: none;
-  font-size: 1rem;
-  transition: var(--transition);
-}
-
-.aanmeld-button:hover{
-    font-size: 1.1rem;
+    background-color: var(--c-main-blue);
+    color: var(--c-background);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 2.5rem auto;
+  }
+  
+  input[type="submit"]:hover{
     background-color: var(--c-hover-blue);
-
-}
-
-?
+    text-decoration: underline;
+    font-size: 1.1rem;
+  }
