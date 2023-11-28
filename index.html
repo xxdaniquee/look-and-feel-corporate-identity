@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./styles/desktop.css"> 
         <link rel="stylesheet" href="./styles/desktop-xl.css"> 
         <script src="https://kit.fontawesome.com/319280bb92.js" crossorigin="anonymous"></script> 
+        <script src="./scripts/script.js"></script>
     </head>
     <body>
 
@@ -21,24 +22,25 @@
                 </a>
             </div>
             
-                <nav class="dropdown">
-                    <button class="dropbtn">&#9776;</button>
-                    <div class="dropdown-content">
-                        <a href="Buurtinitiatieven.html" target="_blank">Buurtinitiatieven</a>
-                        <a href="Vraag-aanbod.html" target="_blank">Vraag en aanbod</a>
-                        <a href="contact.html" target="_blank">Contact</a>
-                    </div>
-                </nav>
+            <div class="headMenu">
+                <button onclick="myFunction()" class="headBtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="dropDown" class="hMenuItem">
+                    <a href="index.html" target="_blank">Home</a>
+                    <a href="#" target="_blank">Buurtinitiatieven</a>
+                    <a href="#" target="_blank">Help een buur</a>
+                    <a href="https://dehallen-amsterdam.nl/contact/" target="_blank">Contact</a>
+                </div>
+            </div>
         </header>
 
 <!-- MAIN -->
 
         <main>
-            <div class="top">
+            <section class="top">
                 <img class="title-pic" src="./assets/hallen-hal.jpeg" alt="Amsterdamse gracht met boren, huizen en zonsondergang">
                 <h1>Ontdek bruisend Amsterdam West</h1>
                 <img  class="hallen-house" src="./assets/Hallen-house.svg" alt="De Hallen dakomtrek in wit">
-            </div>
+            </section>
             
 <!-- BUURTINITIATIEVEN -->
 
@@ -56,7 +58,7 @@
                                 <h3>4 mei commité Oud-West</h3>
                                 <p >Hannie Dankbaarpassage</p>
                         </div>
-                            <p>Organiseren elk jaar 4-mei herdenking Amsterdam oud-west in de passage van De Hallen.</p>
+                            <p>4-mei herdenking Amsterdam oud-west in de passage van De Hallen.</p>
                     </div>
                         <a href="#">Meer informatie</a>
                 </article>
@@ -68,7 +70,7 @@
                             <h3>Amsterdams Buurvrouwen Contact</h3>
                             <p>Oranje Nassaulaan</p>
                         </div>
-                            <p>Organiseren taalles voor geïsoleerde anderstaligen, valt onder De Regenbooggroep.</p>
+                            <p>Organiseren taalles voor geïsoleerde anderstaligen.</p>
                     </div>
                             <a href="./abc.html" class="button">Meer informatie</a>
                  </article>
@@ -90,9 +92,9 @@
                         <img src="./assets/bilderdijkpark.png" alt="Speeltuin">
                             <div class="card-title">
                                 <h3>ASV <br> Bilderdijkpark</h3>
-                                <p>Bilderdijkpark</p>
+                                <p>Bilderdijk<br>park</p>
                             </div>
-                                <p>Speeltuinvereniging/speeltuin met toezicht waar veel kidsactiviteiten worden georganiseerd.</p>
+                                <p>Speeltuinvereniging/speeltuin met toezicht en veel kidsactiviteiten.</p>
                     </div>
                             <a href="#">Meer informatie</a>
                 </article>
@@ -102,11 +104,11 @@
         
 <!-- BUURTINITIATIEF AANMELDEN -->
         
-        <article class="apply-info">
+        <section class="apply-info">
             <h2>Heb jij ook een buurtinitiatief? Meld je aan! </h2>
             <p>Heb jij of ben jij onderdeel van een lokaal project, activiteit of groep in Amsterdam West? Meld deze dan aan en kom in contact met de buurtbewoners en andere ondernemers via onze site! </p>
             <a href="https://xxdaniquee.github.io/all-human-accessible-website/">Initiatief aanmelden</a>
-        </article>
+        </section>
 
 <!-- HELP EEN BUUR -->
 
@@ -135,7 +137,7 @@
                             <img src="./assets/ballon.png" alt="Roze en bruine ballonnen in een halve boog vorm">
                         <div class="card-title">
                             <h3>Gevraagd: Balonnen voor verjaardag.</h3>
-                            <p>Adam</p>
+                            <p>Adam Ams</p>
                         </div>
                             <p>15 december 2023</p>
                             <p>Ik zoek iemand die een ballonenboog kan maken voor mijn dochter haar 18e verjaardag.</p>
@@ -147,7 +149,7 @@
                     <div class="card">
                             <img src="./assets/hondenschool.png" alt="Animatie van een staande hond met riem in bek.">
                         <div class="card-title">
-                            <h3>Aangeboden: Honden uitlaatservice</h3>
+                            <h3>Aangeboden: Honden uitlaat service</h3>
                             <p>Hondenschool Kinker</p>
                         </div>
                             <p>Maandag t/m vrijdag</p>
@@ -161,7 +163,7 @@
                             <img src="./assets/wiskunde.jpeg" alt="Schoolbord met wiskundige sommen">
                         <div class="card-title">
                             <h3>Aangeboden: Bijles wiskunde</h3>
-                            <p>Adam</p>
+                            <p>Adam Ams</p>
                         </div>
                             <p>Dinsdagmiddag</p>
                             <p>Ik zit in vwo5 en kan elke dinsdagmiddag wiskunde bijles geven tot niveau vwo4. </p>

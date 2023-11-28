@@ -22,10 +22,12 @@
     margin: 0rem 20rem;
   }
   .apply-info a {
-    margin: 1rem 20rem 2rem 20rem;
+    margin: 1rem 25rem 2rem 25rem;
   }
   
-
+h3 {
+  font-size: 1.1rem;
+}
 
 
 

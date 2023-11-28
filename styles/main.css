@@ -139,47 +139,49 @@ Header{
 /*  */
 
 
-.dropdown{
-   position: relative;
-   display: inline-block;
-}
-
-.dropbtn{
+.headBtn {
     background-color: var(--c-background);
     color: var(--c-main-green);
-    font-size: 2.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
     border: none;
     cursor: pointer;
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: var(--c-background);
-    z-index: 1;
-    box-shadow: 0 0.5rem 1rem 0 var(--c-textblock);
-    text-align: left;
-    min-width: 10rem;
+.headBtn:hover, .headBtn:focus {
+    color: var(--c-hover-green);
 }
 
-.dropdown-content a{
-    color: var(--c-main-green);
-    background-color: var(--c-accent-green);
+.headmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.hMenuItem {
+    display: none;
+    position: absolute;
+    background-color: var(--c-textblock);
+    box-shadow: 0px 8px 16px 0px black 0.2;
+    z-index: 1;
+    right: 0;
+}
+
+.hMenuItem a {
+    color: var(--c-main-blue);
     padding: 1rem;
     text-decoration: none;
     display: block;
+    width: 32rem;
+    text-align: center;
+    border-bottom: 1px solid var(--c-main-blue);
 }
 
-.dropdown-content:hover{
+.hMenuItem a:hover{
     background-color: var(--c-main-green);
-    color: var(--c-accent-green);
+    text-decoration: underline;
 }
 
-.dropdown:hover, .dropdown-content a{ 
-    display: block;
-    right: 0;
-} 
+.show {display:block;}
 
 
 /*  */
