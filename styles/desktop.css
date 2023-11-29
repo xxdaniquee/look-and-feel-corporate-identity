@@ -130,5 +130,54 @@ h3 {
 }
 
 
-    
+ /*  */
+/*  */
+/*  AANMELDEN VOOR EEN BUURTINITIATIEF */
+/*  */
+/*  */
+
+.aanmeld-pic{
+  height: 15rem;
+}
+
+.aan-hallen-house {
+  top: 82%;
+}
+.aan-titel {
+  top: 40%;
+  font-size: 2.5rem;
+}
+.aan-text {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 1.1rem;
+}
+
+form {
+  max-width: 80rem;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea, select {
+    width: 50rem;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+label{
+  text-align: left;
+  margin-left: 15rem;
+  font-size: 1.1rem;
+    }
+
+    input[type="submit"] {
+      width: 15rem;
+    }
+
   }

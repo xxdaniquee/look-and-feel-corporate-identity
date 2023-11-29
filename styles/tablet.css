@@ -146,8 +146,29 @@
     text-align: center;
   }
   
-  
-  
+  }
 
-  
+
+  /*  */
+/*  */
+/*  AANMELDEN VOOR EEN BUURTINITIATIEF */
+/*  */
+/*  */
+
+.aan-text {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea, select {
+    width: 40rem;
+    margin-left: 0;
   }
