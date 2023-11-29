@@ -1,134 +1,121 @@
 @media (min-width: 768px) and (max-width: 1023px) {
  
+/* TOP */
 
- .top h1 {
-  font-size: 3rem;
-  top: 60%
- }
+.top h1 {
+    font-size: 3rem;
+    top: 60%
+}
 
- /*  */
+
 /* CARDS */
-/*  */
 
-  .card-wrap{
-     grid-template-columns: repeat(2, 1fr); }
+.card-wrap{
+    grid-template-columns: repeat(2, 1fr); 
+}
 
-     .card p{
-      white-space: wrap;
-      text-align: left;
-      margin: 1rem;
-  }
-
+.card p{
+    white-space: wrap;
+    text-align: left;
+    margin: 1rem;
+}
 
 .apply-info{
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .apply-info p{
-  margin: 0 3rem;
+    margin: 0 3rem;
 }
+
 .apply-info a {
-  margin: 1rem 10rem;
+    margin: 1rem 10rem;
 }
 
 
-/*  */
-/*  */
 /*  FOOTER */
-/*  */
-/*  */
 
 
 footer {
-  text-align: center;
+    text-align: center;
 }
 
 .row-menu ul li {
-  display: inline-block;
-  margin: 0rem 1rem;
+    display: inline-block;
+    margin: 0rem 1rem;
 }
 
 
-
-/*  */
-/*  */
 /*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
-/*  */
-/*  */
+
  
-  .abc-top img{ 
-      height: 15rem;
-  }
+.abc-top img{ 
+    height: 15rem;
+}
   
-  .abc-top h1{
-      color: var(--c-background);
-      top: 70%;
-      transform: translate(-50% -50%);
-      text-shadow: 5px 5px 5px var(--c-ex-dark);
-  }
+.abc-top h1{
+    color: var(--c-background);
+    top: 70%;
+    transform: translate(-50% -50%);
+    text-shadow: 5px 5px 5px var(--c-ex-dark);
+}
   
-  .abc-info {
+.abc-info {
     margin: 2rem 4rem;
-  }
+}
   
-  .abc-card-left, .abc-card-right {
-   display: flex;
+.abc-card-left, .abc-card-right {
+    display: flex;
     width: 52em;
     margin: 1rem;
     padding: 1rem;
-  }
+}
   
-  .abc-card-left img, .abc-card-right img{
+.abc-card-left img, .abc-card-right img{
     width: 25rem;
     height: 20rem;
-  }
+}
 
-  .abc-card-right{
+.abc-card-right{
     text-align: left;
-  }
+}
 
-  .abc-card-right h3 {
+.abc-card-right h3 {
     padding-top: 1.5rem;
     margin-left: 3rem;
-  }
+}
 
-  .abc-card-right a {
+.abc-card-right a {
     display: block;
     margin-top: 2rem;
     padding: 1rem;
-  }
+}
 
-  .abc-card-left{
+.abc-card-left{
     flex-direction: row-reverse;
     text-align: right;
     margin-bottom: 3rem;
-  }
+}
 
-  .abc-card-left h3 {
+.abc-card-left h3 {
     margin-right: 1rem;
     padding-top: 1.5rem;
     margin-right: 3rem
-  }
+}
 
-  .abc-card-left p{
+.abc-card-left p{
     text-align: right;
     margin-right: 3rem;
-  }
+}
   
-  .abc-card-left a, .abc-card-right a{
+.abc-card-left a, .abc-card-right a{
     padding: 1rem;
     width: 15rem;
     text-align: center;
-  }
+}
   
-  }
-
-
-  /*  */
-/*  */
+ 
 /*  AANMELDEN VOOR EEN BUURTINITIATIEF */
-/*  */
-/*  */
 
 .aan-text {
   margin-left: 4rem;
@@ -147,3 +134,4 @@ input[type="text"],
     width: 40rem;
     margin-left: 0;
   }
+}

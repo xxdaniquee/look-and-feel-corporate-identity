@@ -1,39 +1,40 @@
 @media (min-width: 1024px) and (max-width: 1919px) {
     
-  .top h1{
+/* Top */
+
+.top h1{
     font-size: 3.5rem;
     top: 60%;
-  } 
+} 
   
 
 
-  h2 {
+h2 {
     font-size: 2rem;
-  }
+}
 
 
-  /*  */
 /* CARDS */
-/*  */
 
-  .card-wrap{
+.card-wrap{
     grid-template-columns: repeat(4, 1fr); 
-  }
+}
 
-  
+/* APPLY_INFO */
 
-  .apply-info p {
+.apply-info p {
     margin: 0rem 20rem;
-  }
-  .apply-info a {
+}
+
+.apply-info a {
     margin: 1rem 25rem 2rem 25rem;
-  }
+}
   
 h3 {
   font-size: 1.1rem;
 }
 
-
+/* FOOTER */
 
 footer {
   text-align: center;
@@ -44,12 +45,8 @@ footer {
   margin: 0rem 1rem;
 }
 
-/*  */
-/*  */
-/*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
-/*  */
-/*  */
 
+/*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
 
 .abc-top img{
   height: 20rem;
@@ -123,11 +120,7 @@ footer {
 }
 
 
- /*  */
-/*  */
 /*  AANMELDEN VOOR EEN BUURTINITIATIEF */
-/*  */
-/*  */
 
 .aanmeld-pic{
   height: 15rem;
@@ -136,10 +129,12 @@ footer {
 .aan-hallen-house {
   top: 82%;
 }
+
 .aan-titel {
   top: 40%;
   font-size: 2.5rem;
 }
+
 .aan-text {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -157,20 +152,20 @@ input[type="text"],
   input[type="tel"],
   textarea, select {
     width: 50rem;
-  }
+}
 
-  textarea {
+textarea {
     height: 100px;
-  }
+}
 
 label{
   text-align: left;
   margin-left: 15rem;
   font-size: 1.1rem;
-    }
+}
 
-    input[type="submit"] {
+input[type="submit"] {
       width: 15rem;
-    }
+}
 
   }

@@ -25,6 +25,7 @@
         url('ITCAvantGardeStd-Bold.woff') format('woff'),
         url('ITCAvantGardeStd-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: auto;
 }
   
   @font-face {
@@ -36,6 +37,7 @@
         url('ITCAvantGardeStd-Md.woff') format('woff'),
         url('ITCAvantGardeStd-Md.ttf') format('truetype');
     font-weight: 500;
+    font-display: auto;
 }
   
 @font-face {
@@ -47,6 +49,7 @@
         url('ITCAvantGardeStd-XLt.woff') format('woff'),
         url('ITCAvantGardeStd-XLt.ttf') format('truetype');
     font-weight: 300;
+    font-display: auto;
 }
 
 *{
@@ -334,7 +337,8 @@ Header{
 
 .apply-info{
     background-color: var(--c-textblock);
-    padding-bottom: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
 }
 .apply-info h2{
     text-align: center;
@@ -566,15 +570,16 @@ footer{
     text-align: center;
     margin: 2rem 1rem 0 1rem;
 }
+
 form {
     max-width: 48rem;
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+}
   
-  label {
+label {
     font-family: 'ITC Avant Garde Std Bold', arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -583,29 +588,29 @@ form {
     width: 100%;
     margin: 2rem 0 0.5rem 2rem;
     color: var(--c-main-blue);
-  }
+}
   
   
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea, select {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea, select {
     background-color: var(--c-textblock);
     width: 25rem;
     margin-left: 2rem;
     padding: 1rem;
     box-sizing: border-box;
-  }
+}
   
-  input[type="file"]{
+input[type="file"]{
     margin-bottom: 4rem;
-  }
+}
   
-  textarea {
+textarea {
     height: 100px;
-  }
+}
   
-  input[type="submit"] {
+input[type="submit"] {
     font-family: 'ITC Avant Garde Std Bold', arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -617,10 +622,10 @@ form {
     cursor: pointer;
     margin: 2.5rem auto;
     margin-bottom: 4rem;
-  }
+}
   
-  input[type="submit"]:hover{
+input[type="submit"]:hover{
     background-color: var(--c-hover-blue);
     text-decoration: underline;
     font-size: 1.1rem;
-  }
+}
