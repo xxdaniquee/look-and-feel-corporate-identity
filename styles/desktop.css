@@ -11,9 +11,13 @@
     font-size: 2rem;
   }
 
+
+  /*  */
+/* CARDS */
+/*  */
+
   .card-wrap{
     grid-template-columns: repeat(4, 1fr); 
-    /* width: 1200px; */
   }
 
   
@@ -31,24 +35,13 @@ h3 {
 
 
 
-.foot-contact{
-     text-align: right;
-     margin-right: 1.5em;
-     line-height: 0.5em;
-     margin-top: 5em;
+footer {
+  text-align: center;
 }
 
-.foot-contact img{
-     width: 8em;
-}
-
-.nav-foot{
-     text-align: left;
-     margin-left: 1.5em;
-}
-
-.nav-foot ul{
-  border: none;
+.row-menu ul li {
+  display: inline-block;
+  margin: 0rem 1rem;
 }
 
 /*  */

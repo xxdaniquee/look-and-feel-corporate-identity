@@ -1,15 +1,14 @@
 @media (min-width: 768px) and (max-width: 1023px) {
  
+
  .top h1 {
   font-size: 3rem;
   top: 60%
  }
- 
 
-
-
- 
-  
+ /*  */
+/* CARDS */
+/*  */
 
   .card-wrap{
      grid-template-columns: repeat(2, 1fr); }
@@ -33,43 +32,21 @@
 }
 
 
+/*  */
+/*  */
+/*  FOOTER */
+/*  */
+/*  */
 
 
+footer {
+  text-align: center;
+}
 
-
-
-   
-
-    footer{
-      display: flex;
-      flex-direction: row;
-      
-    }
-    
-    .foot-contact{
-         text-align: left;
-         margin-right: 1.5em;
-         line-height: 1em;
-         margin-top:2em;
-    }
-    
-    .foot-contact img{
-         width: 8rem;
-         ;
-    }
-    
-    .nav-foot{
-         text-align: left;
-         margin-left: 1.5rem;
-    }
-    
-    .nav-foot ul{
-      border: none;
-    }
-
-
-
-
+.row-menu ul li {
+  display: inline-block;
+  margin: 0rem 1rem;
+}
 
 
 
@@ -78,9 +55,7 @@
 /*  AMSTERDAMS BUURVROUWENCONTACT PAGINA */
 /*  */
 /*  */
-
-
-  
+ 
   .abc-top img{ 
       height: 15rem;
   }

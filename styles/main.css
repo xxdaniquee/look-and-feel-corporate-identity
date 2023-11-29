@@ -263,8 +263,11 @@ Header{
     color: var(--c-hover-green);
 } 
 
+
+/*  */
 /*  */
 /* CARDS */
+/*  */
 /*  */
 
 .card-wrap {
@@ -372,40 +375,46 @@ Header{
 /*  */
 
 footer{
+    font-family: 'ITC Avant Garde Gothic Std Medium', arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    text-align:left;
+    margin-top: 1rem;
     background-color: var(--c-main-blue);
     color: var(--c-background);
-    text-align: center;
-    padding: 1.9rem 0;
+    padding: 1rem
+    }
+
+.row-social, .row-menu, .row-text{
+    width:100%;
+    padding: 1rem;
+    font-size:0.8rem;
 }
 
-.nav-foot ul{
-    list-style-type: none;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--c-background);
-}
-
-.nav-foot li{
-    margin: 0.3rem 0;
-}
-
-.nav-foot a{
-    text-decoration: none;
+.row-social a, .row-menu a, .row-text p{
+    text-decoration:none;
     color: var(--c-background);
+    transition: var(--transition);
+}
+            
+.row-social a:hover, .row-menu a:hover, .row-text a:hover{
+    color: var(--c-main-green);
 }
 
-.nav-foot a:hover{
-    text-decoration: underline;
+.row-menu ul li{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
 }
 
-.foot-hallen{
-    margin-top: 2rem;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 1rem;
+.row-menu {
+    width:100%;
 }
 
-.foot-contact img{
-    width: 20%;
+.row-social a i{
+    font-size: 2rem;
+    margin: 0.5rem;
 }
 
 
